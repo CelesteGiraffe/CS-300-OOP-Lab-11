@@ -25,7 +25,7 @@ std::string Vigenere::encrypt(std::string msg) {
         char msgChar = msg[i];
 
         if (msgChar >= 'A' && msgChar <= 'Z') {
-            // Shift only uppercase alphabetic characters
+            // Shift only uppercase alphabetic characters modulo key length because the key is repeated
             char keyChar = key[keyIndex % keyLength];
             // Because chars in cpp are just numbers, we can do math with them
             int shift = keyChar - 'A';
