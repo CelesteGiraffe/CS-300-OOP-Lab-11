@@ -10,7 +10,8 @@ Vigenere::Vigenere(std::string key) {
 }
 
 Vigenere::~Vigenere() {
-    // No memory to clean up, the program will handle it automatically when the class is no longer needed. 
+    // No memory to clean up, the program will handle it 
+    // automatically when the class is no longer needed. 
     // This will free up the memory based on
     // how the object was created (stack or heap).
 }
